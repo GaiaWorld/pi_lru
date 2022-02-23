@@ -1,0 +1,8 @@
+[package]
+name = "pi_lru"
+version = "0.1.0"
+authors = ["zmythleo <zmythleo@gmail.com>"]
+
+[dependencies]
+pi_deque = {path="../pi_deque"}
+pi_slab={path="../pi_slab"}
