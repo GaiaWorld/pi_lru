@@ -4,13 +4,13 @@
 //! 定时整理，依次超时的资源移除，直到达到最小容量。
 //! 内部数据结构为一个slab队列，支持快速从中间删除。 一般被res模块使用，资源id依赖res模块的slab分配。
 
-extern crate deque;
-extern crate slab;
+extern crate pi_deque;
+extern crate pi_slab;
 
 use std::ops::Deref;
 
-use deque::deque::{Deque, Node};
-use slab::Slab;
+use pi_deque::deque::{Deque, Node};
+use pi_slab::Slab;
 
 pub static MIN: usize = 64 * 1024;
 pub static MAX: usize = 1024 * 1024;

@@ -2,7 +2,12 @@
 name = "pi_lru"
 version = "0.1.0"
 authors = ["zmythleo <zmythleo@gmail.com>"]
+edition = "2021"
+description = "LRU cache"
+repository = "https://github.com/GaiaWorld/pi_lru.git"
+license = "MIT OR Apache-2.0"
+keywords = ["pi", "lru", "pi_lru"]
 
 [dependencies]
-pi_deque = {path="../pi_deque"}
-pi_slab={path="../pi_slab"}
+pi_deque = "0.1"
+pi_slab= "0.1"
